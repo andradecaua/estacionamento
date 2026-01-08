@@ -30,13 +30,13 @@ while (sistemaRodando)
         case "1":
             Console.WriteLine("Digite a placa do veículo: ");
             string placaCadastrar = Console.ReadLine();
-            estacionamento.CadastrarVeiculo(placaCadastrar);
+            estacionamento.CadastrarVeiculo(placaCadastrar.ToUpper());
             Console.WriteLine(reset);
             break;
         case "2":
             Console.WriteLine("Digite a placa do veículo: ");
             string placaRemover = Console.ReadLine();
-            estacionamento.RemoverVeiculo(placaRemover);
+            estacionamento.RemoverVeiculo(placaRemover.ToUpper());
             Console.WriteLine(reset);
             break;
         case "3":
